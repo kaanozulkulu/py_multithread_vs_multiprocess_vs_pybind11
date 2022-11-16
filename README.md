@@ -1,4 +1,4 @@
-# Python Multithread vs Multiprocess vs Multithreading using Pybind11
+# Python Multithread vs Multiprocess vs Multithreading using pybind11
 
 **High Level Explanations of Multithreading and Multiprocessing in Python for CPU bound tasks:**
 
@@ -17,3 +17,10 @@ Example output for _num = 100,000,000 is below: <br>
     Multiprocess runtime with 4 processes: 1.6929938793182373 <br>
     Multiprocess and single process returned same result: True <br>
 
+**Multithreading using pybind11** <br>
+[pybind11](https://github.com/pybind/pybind11) enables exposing C++ types in Python. By binding C++ and python using pybind11 we can have a python project where complex tasks are executed using multithreading in C++. This will dramatically improve our runtime. Running "multithread_pybind.py" (located inside [simple_pybind_multithreading](/simple_pybind_multithreading)), shows the runtime for completing the same task with a single thread in python, single thread in C++ and four threads in C++. All the final results are accessible in our python code. Please run "cmake" to create the required CMakeFiles and "make" to create the python binding binary before running "multithread_pybind.py". <br>
+Example output for _num = 100,000,000 is below: <br>
+  > Single thread runtime in python: 4.745443820953369 <br>
+    Single thread runtime in C++ using pybind11: 0.17310094833374023 <br>
+    Multithread (four threads) runtime in C++ using pybind11: 0.04651689529418945 <br>
+    All runs returned same result: True
