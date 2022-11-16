@@ -20,7 +20,7 @@ if __name__ == "__main__":
     
     start_time = time.time()
     result = pybind_multithreading.multi_task()
-    print("Multithread runtime in C++ using pybind11 and four threads:" , time.time() - start_time)
+    print("Multithread (four threads) runtime in C++ using pybind11:" , time.time() - start_time)
 
     print("All runs returned same result:", (res == thread_res == result))
 
