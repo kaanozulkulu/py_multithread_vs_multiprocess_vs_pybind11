@@ -3,4 +3,4 @@ simple_pybind_multithreading/CMakeCache.txt
 simple_pybind_multithreading/cmake_install.cmake
 Makefile
 simple_pybind_multithreading/pybind_multithreading.cpython-39-darwin.so
-
+.gitignore
