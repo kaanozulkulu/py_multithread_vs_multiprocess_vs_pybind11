@@ -1,4 +1,4 @@
-# python_multithread_vs_multiprocess
+# Python Multithread vs Multiprocess vs Multithreading using Pybind11
 
 **High Level Explanations of Multithreading and Multiprocessing in Python for CPU bound tasks:**
 
