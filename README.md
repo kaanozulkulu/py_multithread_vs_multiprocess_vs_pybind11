@@ -24,3 +24,5 @@ Example output for _num = 100,000,000 is below: <br>
     Single thread runtime in C++ using pybind11: 0.17310094833374023 <br>
     Multithread (four threads) runtime in C++ using pybind11: 0.04651689529418945 <br>
     All runs returned same result: True
+    
+ To see different examples of how pybind11 can be utilized for multithreading check: [more_pybind_examples](/more_pybind_examples)
